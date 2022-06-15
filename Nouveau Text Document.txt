@@ -1,0 +1,15 @@
+ public void consomq(int a)
+        {
+
+            Con.Open();
+
+            DateTime date = DateTime.Now;
+            MessageBox.Show(" ;;"+cle);
+            string Reqq = " insert into Tableqn where idd='"+ cle +"' values('" + s + "','" + date + "') ";
+            SqlCommand cmmd = new SqlCommand(Reqq, Con);
+            cmmd.ExecuteNonQuery();
+            MessageBox.Show(" produit ajoute avec succes");
+
+            Con.Close();
+
+        }
